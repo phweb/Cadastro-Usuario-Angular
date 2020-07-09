@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fernando & Sorocaba",
+      "cpf": "01126861170",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Gustavo Lima",
+      "cpf": 0,
+      "price": 12000.89
+    },
+    {
+      "id": 3,
+      "name": "Ze Neto e Cristiano",
+      "cpf": 0,
+      "price": "7520.89"
+    },
+    {
+      "name": "Jorge & Matheus",
+      "price": "1.50",
+      "cpf": 0,
+      "id": 4
+    }
+  ]
+}
