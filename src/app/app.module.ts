@@ -29,6 +29,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { RedDirective } from './directives/red.directive';
+import { NgxMaskModule } from 'ngx-mask';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
@@ -56,6 +57,7 @@ registerLocaleData(localePt);
   ],
   imports: [
     BrowserModule,
+    NgxMaskModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,

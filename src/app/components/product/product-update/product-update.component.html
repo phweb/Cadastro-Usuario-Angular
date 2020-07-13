@@ -6,12 +6,16 @@
                 [(ngModel)]="product.name" name="name">
         </mat-form-field>
         <mat-form-field>
+            <input matInput placeholder="E-mail"
+                [(ngModel)]="product.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
             <input matInput placeholder="CPF"
                 [(ngModel)]="product.cpf" name="cpf">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"
-                [(ngModel)]="product.price" name="price">
+            <input matInput placeholder="CEP"
+                [(ngModel)]="product.cep" name="cep">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="updateProduct()" color="primary">

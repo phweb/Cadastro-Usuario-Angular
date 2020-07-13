@@ -1,6 +1,8 @@
 export interface Product {
     id?: number
     name: string
+    email: string
     cpf: number
-    price: number
+    cep: number
+    bairro: string
 }

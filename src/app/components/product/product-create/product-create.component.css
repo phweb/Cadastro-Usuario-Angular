@@ -7,3 +7,6 @@ form {
 button {
     margin: 20px 15px 0px 0px;
 }
+.mat-form-field {
+    margin-left: 10px;
+  }

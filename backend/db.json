@@ -1,28 +1,20 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Fernando & Sorocaba",
+      "name": "paulo",
+      "email": "phweb53@gmail.com",
+      "cep": "71725206",
       "cpf": "01126861170",
-      "price": 5.89
+      "id": 5,
+      "bairro": "brasilia"
     },
     {
-      "id": 2,
-      "name": "Gustavo Lima",
-      "cpf": 0,
-      "price": 12000.89
-    },
-    {
-      "id": 3,
-      "name": "Ze Neto e Cristiano",
-      "cpf": 0,
-      "price": "7520.89"
-    },
-    {
-      "name": "Jorge & Matheus",
-      "price": "1.50",
-      "cpf": 0,
-      "id": 4
+      "name": "pedro",
+      "email": "phweb53@gmail.com",
+      "cep": "71725206",
+      "cpf": "01126861170",
+      "bairro": "Candangolândia",
+      "id": 6
     }
   ]
 }

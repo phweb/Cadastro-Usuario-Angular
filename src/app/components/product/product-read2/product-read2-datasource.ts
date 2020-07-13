@@ -6,11 +6,11 @@ import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 
 const EXAMPLE_DATA: Product[] = [
-  {id: 1, name: 'Hydrogen', cpf: 0, price: 9.99},
-  {id: 2, name: 'Helium', cpf: 0, price: 9.99},
-  {id: 3, name: 'Lithium', cpf: 0, price: 9.99},
-  {id: 4, name: 'Beryllium', cpf: 0, price: 9.99},
-  {id: 5, name: 'Boron', cpf: 0, price: 9.99}
+  {id: 1, name: 'Hydrogen', email: '', cpf: 0, cep: 0, bairro: '' },
+  {id: 2, name: 'Helium', email: '', cpf: 0, cep: 0, bairro: ''},
+  {id: 3, name: 'Lithium', email: '', cpf: 0, cep: 0, bairro: ''},
+  {id: 4, name: 'Beryllium', email: '', cpf: 0, cep: 0, bairro: ''},
+  {id: 5, name: 'Boron', email: '', cpf: 0, cep: 0, bairro: ''}
 ];
 
 /**

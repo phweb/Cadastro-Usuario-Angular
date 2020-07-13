@@ -1,19 +1,29 @@
 <mat-card>
-    <mat-card-title>Novo Produto</mat-card-title>
-    <form>
+    <mat-card-title>Cadastrar novo usuário</mat-card-title>
+    <form #f="ngForm" >
         <mat-form-field>
             <input matInput placeholder="Nome"
                 [(ngModel)]="product.name" name="name">
-        </mat-form-field>   
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail"
+                [(ngModel)]="product.email" name="email">
+        </mat-form-field>      
         <mat-form-field>
             <input matInput placeholder="CPF"
-                [(ngModel)]="product.cpf" name="cpf">
+                [(ngModel)]="product.cpf" name="cpf"  mask="000.000.000-00">
         </mat-form-field>   
-
+        <div ngModelGroup="endereco">
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"
-                [(ngModel)]="product.price" name="price">
-        </mat-form-field>
+            <input matInput placeholder="Cep"
+                [(ngModel)]="product.cep" name="cep" mask="00000-000" (blur)="consultaCEP($event.target.value, f)">
+        </mat-form-field>  
+        <mat-form-field>
+            <input matInput placeholder="Bairro"
+                [(ngModel)]="product.bairro" name="bairro">
+        </mat-form-field>   
+        </div>
+        
     </form>
     <button mat-raised-button (click)="createProduct()" color="primary">
         Salvar
