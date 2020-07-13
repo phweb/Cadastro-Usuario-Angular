@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-title>Alterar Produto</mat-card-title>
-    <form>
+    <form #f="ngForm" >
         <mat-form-field>
             <input matInput placeholder="Nome"
                 [(ngModel)]="product.name" name="name">
@@ -8,15 +8,42 @@
         <mat-form-field>
             <input matInput placeholder="E-mail"
                 [(ngModel)]="product.email" name="email">
-        </mat-form-field>
+        </mat-form-field>      
         <mat-form-field>
             <input matInput placeholder="CPF"
-                [(ngModel)]="product.cpf" name="cpf">
-        </mat-form-field>
+                [(ngModel)]="product.cpf" name="cpf"  mask="000.000.000-00">
+        </mat-form-field>  
         <mat-form-field>
-            <input matInput placeholder="CEP"
-                [(ngModel)]="product.cep" name="cep">
-        </mat-form-field>
+            <input matInput placeholder="Telefone" mask="(00)0000-0000"
+                [(ngModel)]="product.telefone" name="telefone">
+        </mat-form-field>   
+        <div ngModelGroup="endereco">
+        <mat-form-field>
+            <input matInput placeholder="Cep"
+                [(ngModel)]="product.cep" name="cep" mask="00000-000" >
+        </mat-form-field>  
+        <mat-form-field>
+            <input matInput placeholder="complemento"
+                [(ngModel)]="product.complemento" name="complemento">
+        </mat-form-field> 
+        <mat-form-field>
+            <input matInput placeholder="Rua"
+                [(ngModel)]="product.logradouro" name="logradouro">
+        </mat-form-field> 
+        <mat-form-field>
+            <input matInput placeholder="Bairro"
+                [(ngModel)]="product.bairro" name="bairro">
+        </mat-form-field>   
+        <mat-form-field>
+            <input matInput placeholder="Cidade"
+                [(ngModel)]="product.localidade" name="localidade">
+        </mat-form-field> 
+        <mat-form-field>
+            <input matInput placeholder="Estado"
+                [(ngModel)]="product.uf" name="uf">
+        </mat-form-field> 
+        </div>
+        
     </form>
     <button mat-raised-button (click)="updateProduct()" color="primary">
         Atualizar
