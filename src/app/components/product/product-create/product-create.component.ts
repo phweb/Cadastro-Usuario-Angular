@@ -14,9 +14,14 @@ export class ProductCreateComponent implements OnInit {
   product: Product = {
     name: '',
     email: '',
+    telefone: null,
     cep: null,
     cpf: null,
-    bairro: ''
+    bairro: '',
+    complemento: '',
+    uf :'', 
+    localidade: '', 
+    logradouro: '',
   }
 
   constructor(private productService: ProductService, private http: HttpClient,
@@ -28,7 +33,7 @@ export class ProductCreateComponent implements OnInit {
 
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Cadastro criado!')
+      this.productService.showMessage('Cadastro criado com sucesso!')
       this.router.navigate(['/products'])
     })
 
@@ -61,12 +66,12 @@ export class ProductCreateComponent implements OnInit {
 
     formulario.form.patchValue({
       endereco: {
-        rua: dados.logradouro,
+        logradouro: dados.logradouro,
         // cep: dados.cep,
         complemento: dados.complemento,
         bairro: dados.bairro,
-        cidade: dados.localidade,
-        estado: dados.uf
+        localidade: dados.localidade,
+        uf: dados.uf
       }
     });
 

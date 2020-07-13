@@ -3,18 +3,29 @@
     {
       "name": "paulo",
       "email": "phweb53@gmail.com",
+      "telefone": "6130244617",
       "cep": "71725206",
       "cpf": "01126861170",
       "id": 5,
-      "bairro": "brasilia"
+      "logradouro": "",
+      "localidade": "",
+      "uf": "df",
+      "bairro": "brasilia",
+      "complemento": ""
     },
     {
       "name": "pedro",
       "email": "phweb53@gmail.com",
+      "telefone": "6130244617",
       "cep": "71725206",
       "cpf": "01126861170",
       "bairro": "Candangolândia",
-      "id": 6
+      "id": 6,
+      "logradouro": "",
+      "localidade": "",
+      "uf": "df",
+      "bairro": "brasilia",
+      "complemento": ""
     }
   ]
 }
