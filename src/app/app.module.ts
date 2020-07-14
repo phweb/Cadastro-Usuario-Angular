@@ -30,6 +30,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { RedDirective } from './directives/red.directive';
 import { NgxMaskModule } from 'ngx-mask';
+import { ReactiveFormsModule  } from '@angular/forms';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
@@ -73,6 +74,7 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    ReactiveFormsModule
   ],
   providers: [{
     provide: LOCALE_ID,

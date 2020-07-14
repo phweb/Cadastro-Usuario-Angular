@@ -1,14 +1,15 @@
 <mat-card>
     <mat-card-title>Cadastrar novo usuário</mat-card-title>
-    <form #f="ngForm" >
+    <form #f="ngForm"  [formGroup]="formUsuario">
         <mat-form-field>
             <input matInput placeholder="Nome"
-                [(ngModel)]="product.name" name="name">
+                [(ngModel)]="product.name"  name="name">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="E-mail"
-                [(ngModel)]="product.email" name="email">
-        </mat-form-field>      
+                [(ngModel)]="product.email" formControlName="email" name="email" required >
+        </mat-form-field>   
+           
         <mat-form-field>
             <input matInput placeholder="CPF"
                 [(ngModel)]="product.cpf" name="cpf"  mask="000.000.000-00">

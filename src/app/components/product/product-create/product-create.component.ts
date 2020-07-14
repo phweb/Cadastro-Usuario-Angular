@@ -3,6 +3,7 @@ import { ProductService } from './../product.service';
 import { HttpClient } from "@angular/common/http";
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-product-create',
@@ -10,6 +11,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
+  formUsuario = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+  });
 
   product: Product = {
     name: '',
